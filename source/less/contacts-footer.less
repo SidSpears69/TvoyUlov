@@ -1,0 +1,51 @@
+.contacts-footer {
+    display: flex;
+    justify-content: space-between;
+}
+.contacts-footer__block {
+    display: flex;
+    flex-direction: column;
+}
+.contacts-footer__link {
+    font-size: 20px;
+    color: #0F101A;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    position: relative;
+    &--phone::after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        bottom: 50%;
+        transform: translateY(-50%);
+        width: 20px;
+        height: 20px;
+        background-size: contain;
+        background-image: url("../img/icons/icon-phone.svg");
+    }
+    &:last-child,
+    &--whatsapp {
+        margin-bottom: 0;
+    }
+    &--whatsapp::after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        bottom: 50%;
+        transform: translateY(-50%);
+        width: 20px;
+        height: 20px;
+        background-size: contain;
+        background-image: url("../img/icons/icon-whatsapp.svg");
+    }
+}
+.contacts-footer__text {
+    padding-left: 30px;
+    margin: 5px 0;
+    font-size: 14px;
+    color: #4f4f4f;
+}

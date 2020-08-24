@@ -1,0 +1,48 @@
+.slider {
+    border: 1px solid #F2F2F2;
+    position: relative;
+}
+.slider__item {
+    background-size: cover;
+    &--project {
+        background-image: url("../img/slider-bg.jpg");
+    }
+}
+.slider__link {
+    display: flex;
+    color: inherit;
+    padding: 30px;
+    justify-content: space-between;
+}
+.slider__photo {
+    background: #FB8C00;
+    border-radius: 150px 0px 150px 150px;
+    width: 260px;
+    height: 260px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    & img {
+        max-width: none;
+        flex-shrink: 0;
+    }
+}
+.slider__price {
+    background: #2E3451;
+    border: 2px solid #E0E0E0;
+    border-radius: 25px 25px 0px 25px;
+    align-self: flex-start;
+    font-size: 24px;
+    color: #ffffff;
+    padding: 6px 18px;
+    margin: 0;
+    position: absolute;
+    top: 20px;
+    right: 23%;
+}
+.slider__controls {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 28px;
+}
