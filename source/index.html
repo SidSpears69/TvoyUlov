@@ -30,14 +30,14 @@
           <label for="search" class="visually-hidden">Поиск по сайту</label>
           <input type="search" name="search" id="search" placeholder="Что ищем?" class="search__input">
           <button type="submit" class="button button--search">
-            <img src="img/icons/search.svg" aria-hidden="true" width="26" height="26">
+            <img src="img/icons/icon-search.svg" aria-hidden="true" width="26" height="26">
             <span class="visually-hidden">Искать</span>
           </button>
         </form>
       </div>
       <div class="page-header__section page-header__section--bottom">
         <nav class="page-header__menu menu">
-          <ul class="menu__list">
+          <ul class="list menu__list">
             <li class="menu__item"><a href="javascript:void(0)" class="menu__link">О нас</a></li>
             <li class="menu__item"><a href="javascript:void(0)" class="menu__link">Оплата и доставка</a></li>
             <li class="menu__item"><a href="javascript:void(0)" class="menu__link">Отследить заказ</a></li>
@@ -45,56 +45,85 @@
             <li class="menu__item"><a href="javascript:void(0)" class="menu__link">Форум</a></li>
           </ul>
         </nav>
-        <p class="page-header__enter-site enter-site">
-          <a href="javascript:void(0)" class="enter-site__link">Войти</a>
-          /
-          <a href="javascript:void(0)" class="enter-site__link">Регистрация</a>
-        </p>
-        <a href="javascript:void(0)" class="page-header__products-link products-link" title="Избранное">
-          <img src="img/icons/icon-favourites.svg" aria-hidden="true" class="products-link__img" width="27" height="24">
-          <span class="visually-hidden">Избранное</span><span class="products-link__counter">11</span>
-        </a>
-        <a href="javascript:void(0)" class="page-header__products-link products-link" title="Сравнение товаров">
-          <img src="img/icons/icon-comparison.svg" aria-hidden="true" class="products-link__img" width="26" height="26">
-          <span class="visually-hidden">Сравнение товаров</span><span class="products-link__counter">3</span>
-        </a>
-        <a href="javascript:void(0)" class="page-header__products-link products-link" title="Корзина">
-          <img src="img/icons/icon-basket.svg" aria-hidden="true" class="products-link__img" width="28" height="24">
-          <span class="visually-hidden">Корзина</span><span class="products-link__counter">2</span>
-        </a>
+        <div class="page-header__site-controls site-controls">
+          <p class="site-controls__enter">
+            <a href="javascript:void(0)" class="site-controls__link">Войти</a>
+            /
+            <a href="javascript:void(0)" class="site-controls__link">Регистрация</a>
+          </p>
+          <a href="javascript:void(0)" class="site-controls__product-link" title="Избранное">
+            <img src="img/icons/icon-favourites.svg" aria-hidden="true" class="site-controls__img" width="27" height="24">
+            <span class="visually-hidden">Избранное</span><span class="site-controls__counter">11</span>
+          </a>
+          <a href="javascript:void(0)" class="site-controls__product-link" title="Сравнение товаров">
+            <img src="img/icons/icon-comparison.svg" aria-hidden="true" class="site-controls__img" width="26" height="26">
+            <span class="visually-hidden">Сравнение товаров</span><span class="site-controls__counter">3</span>
+          </a>
+          <a href="javascript:void(0)" class="site-controls__product-link" title="Корзина">
+            <img src="img/icons/icon-basket.svg" aria-hidden="true" class="site-controls__img" width="28" height="24">
+            <span class="visually-hidden">Корзина</span><span class="site-controls__counter">2</span>
+          </a>
+        </div>
       </div>
     </div>
-
   </header>
   <main class="page-main">
-    <div class="wrapper">
+    <div class="wrapper wrapper--main">
       <aside class="page-aside">
         <section class="page-aside__menu menu-catalog">
           <h2 class="menu-catalog__title">Категории</h2>
-          <ul class="menu-catalog__list">
+          <ul class="list menu-catalog__list">
             <li class="menu-catalog__item">
               <a href="javascript:void(0)" class="menu-catalog__link">Лодки ПВХ</a>
+              <button class=" button button--dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="img/icons/icon-dropdown.svg" alt="" aria-hidden="true">
+                <span class="visually-hidden">Открыть подменю</span>
+              </button>
             </li>
             <li class="menu-catalog__item">
               <a href="javascript:void(0)" class="menu-catalog__link">Промысловое рыболовство</a>
+              <button class=" button button--dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="img/icons/icon-dropdown.svg" alt="" aria-hidden="true">
+                <span class="visually-hidden">Открыть подменю</span>
+              </button>
             </li>
             <li class="menu-catalog__item">
               <a href="javascript:void(0)" class="menu-catalog__link">Удилища</a>
+              <button class=" button button--dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="img/icons/icon-dropdown.svg" alt="" aria-hidden="true">
+                <span class="visually-hidden">Открыть подменю</span>
+              </button>
             </li>
             <li class="menu-catalog__item">
               <a href="javascript:void(0)" class="menu-catalog__link">Катушки</a>
+              <button class=" button button--dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="img/icons/icon-dropdown.svg" alt="" aria-hidden="true">
+                <span class="visually-hidden">Открыть подменю</span>
+              </button>
             </li>
             <li class="menu-catalog__item">
               <a href="javascript:void(0)" class="menu-catalog__link">Леска, шнуры</a>
+              <button class=" button button--dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="img/icons/icon-dropdown.svg" alt="" aria-hidden="true">
+                <span class="visually-hidden">Открыть подменю</span>
+              </button>
             </li>
             <li class="menu-catalog__item">
               <a href="javascript:void(0)" class="menu-catalog__link">Канаты, веревки, шнуры</a>
+              <button class=" button button--dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="img/icons/icon-dropdown.svg" alt="" aria-hidden="true">
+                <span class="visually-hidden">Открыть подменю</span>
+              </button>
             </li>
             <li class="menu-catalog__item">
               <a href="javascript:void(0)" class="menu-catalog__link">Нитки</a>
             </li>
             <li class="menu-catalog__item">
               <a href="javascript:void(0)" class="menu-catalog__link">Приманки</a>
+              <button class=" button button--dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="img/icons/icon-dropdown.svg" alt="" aria-hidden="true">
+                <span class="visually-hidden">Открыть подменю</span>
+              </button>
             </li>
             <li class="menu-catalog__item">
               <a href="javascript:void(0)" class="menu-catalog__link">Прикормки</a>
@@ -104,9 +133,17 @@
             </li>
             <li class="menu-catalog__item">
               <a href="javascript:void(0)" class="menu-catalog__link">Оснастка</a>
+              <button class=" button button--dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="img/icons/icon-dropdown.svg" alt="" aria-hidden="true">
+                <span class="visually-hidden">Открыть подменю</span>
+              </button>
             </li>
             <li class="menu-catalog__item">
               <a href="javascript:void(0)" class="menu-catalog__link">Одежда и обувь</a>
+              <button class=" button button--dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="img/icons/icon-dropdown.svg" alt="" aria-hidden="true">
+                <span class="visually-hidden">Открыть подменю</span>
+              </button>
             </li>
             <li class="menu-catalog__item">
               <a href="javascript:void(0)" class="menu-catalog__link">Эхолоты, навигации, рации</a>
@@ -116,67 +153,83 @@
             </li>
             <li class="menu-catalog__item">
               <a href="javascript:void(0)" class="menu-catalog__link">Сопутствующие товары</a>
+              <button class=" button button--dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="img/icons/icon-dropdown.svg" alt="" aria-hidden="true">
+                <span class="visually-hidden">Открыть подменю</span>
+              </button>
             </li>
             <li class="menu-catalog__item">
               <a href="javascript:void(0)" class="menu-catalog__link">Зимняя рыбалка</a>
+              <button class=" button button--dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="img/icons/icon-dropdown.svg" alt="" aria-hidden="true">
+                <span class="visually-hidden">Открыть подменю</span>
+              </button>
             </li>
             <li class="menu-catalog__item">
               <a href="javascript:void(0)" class="menu-catalog__link">Туризм</a>
+              <button class=" button button--dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="img/icons/icon-dropdown.svg" alt="" aria-hidden="true">
+                <span class="visually-hidden">Открыть подменю</span>
+              </button>
             </li>
           </ul>
         </section>
         <section class="page-aside__section stocks">
-          <a href="javascript:void(0)" class="stocks__view-all">Акции и скидки</a>
+          <a href="javascript:void(0)" class="view-all view-all--stocks"><img src="img/icons/icon-sale.svg" alt="" aria-hidden="true">Акции и скидки</a>
           <div class="stocks__slider slider-stocks">
-            <h2 class="page-aside__title">Акции</h2>
-            <div class="slider-stocks__controls">
-              <button type="button" class="button button--slider-stocks button--prev" title="Предыдущий слайд">
-                <span class="visually-hidden">Предыдущий слайд</span>
-              </button>
-              <button type="button" class="button button--slider-stocks button--next" title="Следующий слайд">
-                <span class="visually-hidden">Следующий слайд</span>
-              </button>
+            <div class="slider-stocks__top">
+              <h2 class="page-aside__title">Акции</h2>
+              <div class="slider-stocks__controls">
+                <button type="button" class="button button--slider-stocks button--prev" title="Предыдущий слайд">
+                  <img src="img/icons/icon-slider-control.svg" alt="" aria-hidden="true">
+                  <span class="visually-hidden">Предыдущий слайд</span>
+                </button>
+                <button type="button" class="button button--slider-stocks button--next" title="Следующий слайд">
+                  <img src="img/icons/icon-slider-control.svg" alt="" aria-hidden="true">
+                  <span class="visually-hidden">Следующий слайд</span>
+                </button>
+              </div>
             </div>
+            <article class="slider-stocks__slide stock-product">
+              <a href="javascript:void(0)" class="stock-product__link">
+                <img src="img/batteries.png" alt="Аккумуляторные батареи" class="stock-product__img" width="260"
+                  height="260">
+                <h3 class="stock-product__name">Аккумуляторные батареи 6800 мАч с з/y</h3>
+                <p class="stock-product__prices">
+                  <span class="stock-product__sale">-20%</span>
+                  <span class="stock-product__price stock-product__price--old">900 ₽</span>
+                  <span class="stock-product__price">600 ₽</span>
+                </p>
+              </a>
+            </article>
           </div>
-          <article class="slider-stocks__slide stock-product">
-            <a href="javascript:void(0)" class="stock-product__link">
-              <img src="img/batteries.png" alt="Аккумуляторные батареи" class="stock-product__img" width="260"
-                height="260">
-              <h3 class="stock-product__name">Аккумуляторные батареи 6800 мАч с з/y</h3>
-              <p class="stock-product__prices">
-                <span class="stock-product__sale">-20%</span>
-                <span class="stock-product__price stock-product__price--old">900 ₽</span>
-                <span class="stock-product__price">600 ₽</span>
-              </p>
-            </a>
-          </article>
         </section>
         <section class="page-aside__section reviews">
           <h2 class="page-aside__title">Обзоры и статьи</h2>
-          <article class="reviews__item review">
-            <a href="javascript:void(0)" class="review__link">
-              <img src="img/review-img.jpg" alt="Ловля щуки" class="review__img" width="80" height="80">
-              <div class="review__text">
-                <h3 class="review__title">Как определить наилучшее время для ловли щуки</h3>
-                <p class="review__date">Опубликовано: 12.06.2020 </p>
+          <article class="reviews__item">
+            <a href="javascript:void(0)" class="reviews__link">
+              <img src="img/review-img.jpg" alt="Ловля щуки" class="reviews__img" width="80" height="80">
+              <div class="reviews__text">
+                <h3 class="reviews__title">Как определить наилучшее время для ловли щуки</h3>
+                <p class="reviews__date">Опубликовано: 12.06.2020 </p>
               </div>
             </a>
           </article>
-          <article class="reviews__item review">
-            <a href="javascript:void(0)" class="review__link">
-              <img src="img/review-img-1.jpg" alt="Ловля окуня" class="review__img" width="80" height="80">
-              <div class="review__text">
-                <h3 class="review__title">Тонкости ловли окуня с лодки</h3>
-                <p class="review__date">Опубликовано: 28.05.2020 </p>
+          <article class="reviews__item">
+            <a href="javascript:void(0)" class="reviews__link">
+              <img src="img/review-img-1.jpg" alt="Ловля окуня" class="reviews__img" width="80" height="80">
+              <div class="reviews__text">
+                <h3 class="reviews__title">Тонкости ловли окуня с лодки</h3>
+                <p class="reviews__date">Опубликовано: 28.05.2020 </p>
               </div>
             </a>
           </article>
-          <article class="reviews__item review">
-            <a href="javascript:void(0)" class="review__link">
-              <img src="img/review-img-2.jpg" alt="Ловля судака" class="review__img" width="80" height="80">
-              <div class="review__text">
-                <h3 class="review__title">Детально о ловле судака на джиговые приманки</h3>
-                <p class="review__date">Опубликовано: 25.05.2020 </p>
+          <article class="reviews__item">
+            <a href="javascript:void(0)" class="reviews__link">
+              <img src="img/review-img-2.jpg" alt="Ловля судака" class="reviews__img" width="80" height="80">
+              <div class="reviews__text">
+                <h3 class="reviews__title">Детально о ловле судака на джиговые приманки</h3>
+                <p class="reviews__date">Опубликовано: 25.05.2020 </p>
               </div>
             </a>
           </article>
@@ -192,7 +245,7 @@
               <div class="slider__text slider-text">
                 <span class="slider-text__first-stroke">Проект</span>
                 <p class="slider-text__wrapper">
-                  <span class="slider-text__second-stroke">Народная лодка/span>
+                  <span class="slider-text__second-stroke">Народная лодка</span>
                     В рамках федеральной программы поддержки отчественных рыболовов–любителей
                 </p>
               </div>
@@ -215,7 +268,7 @@
           <h2 class="recomended-products__title">
             Рекомендуем
           </h2>
-          <ul class="recomended-products__list">
+          <ul class="list recomended-products__list">
             <li class="recomended-products__item">
               <article class="product">
                 <div class="product__block-button">
@@ -617,7 +670,7 @@
         </section>
         <section class="brands">
           <h2 class="visually-hidden">Бренды</h2>
-          <ul class="brands__list">
+          <ul class="list brands__list">
             <li class="brands__item">
               <a href="javascript:void(0)" class="brands__link">
                 <img src="img/chirok.png" alt="Чирок" class="brands__img" width="131" height="30">
@@ -674,7 +727,7 @@
   </main>
   <footer class="page-footer">
     <div class="wrapper">
-      <ul class="page-footer__menu menu-footer">
+      <ul class=" list page-footer__menu menu-footer">
         <li class="menu-footer__item">
           <a href="javascript:void(0)" class="menu-footer__link">О нас</a>
         </li>
@@ -733,19 +786,19 @@
         <div class="page-footer__socials-block">
           <div class="page-footer__socials socials">
             <a href="javascript:void(0)" class="socials-link socials-link--twitter" title="Twitter">
-              <img src="img/icons/twitter.svg" alt="Twitter" aria-hidden="true" width="19" height="15">
+              <img src="img/icons/icon-twitter.svg" alt="Twitter" aria-hidden="true" width="19" height="15">
               <span class="visually-hidden">Twitter</span>
             </a>
             <a href="javascript:void(0)" class="socials-link socials-link--youtube" title="YouTube">
-              <img src="img/icons/youtube.svg" alt="YouTube" aria-hidden="true" width="20" height="14">
+              <img src="img/icons/icon-youtube.svg" alt="YouTube" aria-hidden="true" width="20" height="14">
               <span class="visually-hidden">YouTube</span>
             </a>
             <a href="javascript:void(0)" class="socials-link socials-link--vk" title="Вконтакте">
-              <img src="img/icons/vk.svg" alt="Вконтакте" aria-hidden="true" width="20" height="13">
+              <img src="img/icons/icon-vk.svg" alt="Вконтакте" aria-hidden="true" width="20" height="13">
               <span class="visually-hidden">Вконтакте</span>
             </a>
             <a href="javascript:void(0)" class="socials-link socials-link--instagram" title="Instagram">
-              <img src="img/icons/instagram.svg" alt="Instagram" aria-hidden="true" width="20" height="20">
+              <img src="img/icons/icon-instagram.svg" alt="Instagram" aria-hidden="true" width="20" height="20">
               <span class="visually-hidden">Instagram</span>
             </a>
           </div>

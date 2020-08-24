@@ -1,0 +1,47 @@
+.site-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.site-controls__enter {
+    margin: 0;
+    padding-left: 58px;
+    position: relative;
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        background: url("../img/icons/icon-account.svg");
+        background-size: contain;
+        width: 40px;
+        height: 40px;
+    }
+}
+.site-controls__link {
+    color: #2E3451;
+    font-size: 14px;
+    font-weight: 600;
+}
+.site-controls__product-link {
+    position: relative;
+    padding-top: 8px;
+    padding-right: 8px;
+}
+.site-controls__counter {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #FB8C00;
+    border-radius: 20px 0px 20px 20px;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 10px;
+    color: #ffffff;
+    line-height: 16px;
+}
