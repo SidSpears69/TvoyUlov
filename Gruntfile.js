@@ -104,7 +104,7 @@ module.exports = function (grunt) {
             "fonts/**/*",
             "img/**",
             "js/**",
-            "vendors/**",
+            "plugins/**",
             "*.html"
           ],
           dest: "build"

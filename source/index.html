@@ -7,6 +7,7 @@
   <title>Document</title>
   <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="plugins/swiper.min.css">
   <link rel="stylesheet" href="css/style.css"> 
 </head>
 
@@ -181,28 +182,43 @@
             <div class="slider-stocks__top">
               <h2 class="page-aside__title">Акции</h2>
               <div class="slider-stocks__controls">
-                <button type="button" class="button button--slider-stocks button--prev" title="Предыдущий слайд">
-                  <img src="img/icons/icon-slider-control.svg" alt="" aria-hidden="true" width="13" height="22">
+                <button type="button" class="button button--slider-stocks swiper-button-prev" title="Предыдущий слайд">
                   <span class="visually-hidden">Предыдущий слайд</span>
                 </button>
-                <button type="button" class="button button--slider-stocks button--next" title="Следующий слайд">
-                  <img src="img/icons/icon-slider-control.svg" alt="" aria-hidden="true" width="13" height="22">
+                <button type="button" class="button button--slider-stocks swiper-button-next" title="Следующий слайд">
                   <span class="visually-hidden">Следующий слайд</span>
                 </button>
               </div>
             </div>
-            <article class="slider-stocks__slide product product--stocks">
-              <a href="javascript:void(0)" class="product__link">
-                <img src="img/batteries.png" alt="Аккумуляторные батареи" class="product__img" width="260"
-                  height="260">
-                <h3 class="product__name">Аккумуляторные батареи 6800 мАч с з/y</h3>
-                <p class="product__prices">
-                  <span class="product__sale">-20%</span>
-                  <span class="product__price product__price--old">900 ₽</span>
-                  <span class="product__price">600 ₽</span>
-                </p>
-              </a>
-            </article>
+            <div class="swiper-container slider-stocks__swiper">
+              <div class="swiper-wrapper">
+                <article class="slider-stocks__slide product product--stocks swiper-slide">
+                  <a href="javascript:void(0)" class="product__link">
+                    <img src="img/batteries.png" alt="Аккумуляторные батареи" class="product__img" width="260"
+                      height="260">
+                    <h3 class="product__name">Аккумуляторные батареи 6800 мАч с з/y</h3>
+                    <p class="product__prices">
+                      <span class="product__sale">-20%</span>
+                      <span class="product__price product__price--old">900 ₽</span>
+                      <span class="product__price">600 ₽</span>
+                    </p>
+                  </a>
+                </article>
+                <article class="slider-stocks__slide product product--stocks swiper-slide">
+                  <a href="javascript:void(0)" class="product__link">
+                    <img src="img/batteries.png" alt="Аккумуляторные батареи" class="product__img" width="260"
+                      height="260">
+                    <h3 class="product__name">Аккумуляторные батареи 6900 мАч с з/y</h3>
+                    <p class="product__prices">
+                      <span class="product__sale">-20%</span>
+                      <span class="product__price product__price--old">900 ₽</span>
+                      <span class="product__price">600 ₽</span>
+                    </p>
+                  </a>
+                </article>
+              </div>
+            </div>
+            
           </div>
         </section>
         <section class="page-aside__section reviews">
@@ -242,28 +258,60 @@
         <h1 class="visually-hidden">Твой Улов - лучший выбор в интернете!</h1>
         <section class="slider">
           <h2 class="visually-hidden">Самые популярные товары</h2>
-          <div class="slider__item slider__item--project">
-            <a href="javascript:void(0)" class="slider__link">
-              <div class="slider__text slider-text">
-                <span class="slider-text__first-stroke">Проект</span>
-                <p class="slider-text__wrapper">
-                  <span class="slider-text__second-stroke">Народная лодка</span>
-                    В рамках федеральной программы поддержки отечественных рыболовов–любителей
-                </p>
+          <div class="swiper-container slider__swiper">
+            <div class="swiper-wrapper">
+              <div class="slider__item slider__item--project swiper-slide">
+                <a href="javascript:void(0)" class="slider__link">
+                  <div class="slider__text slider-text">
+                    <span class="slider-text__first-stroke">Проект</span>
+                    <p class="slider-text__wrapper">
+                      <span class="slider-text__second-stroke">Народная лодка</span>
+                        В рамках федеральной программы поддержки отечественных рыболовов–любителей
+                    </p>
+                  </div>
+                  <p class="slider__price">От 5 400 ₽</p>
+                  <div class="slider__photo">
+                    <img src="img/boat.png" alt="Народная лодка" width="328" height="200">
+                  </div>
+                </a>
               </div>
-              <p class="slider__price">От 5 400 ₽</p>
-              <div class="slider__photo">
-                <img src="img/boat.png" alt="Народная лодка" width="328" height="200">
+              <div class="slider__item slider__item--assortiment swiper-slide">
+                <a href="javascript:void(0)" class="slider__link">
+                  <div class="slider__text slider-text">
+                    <span class="slider-text__first-stroke">Большой ассортимент</span>
+                    <p class="slider-text__wrapper">
+                      <span class="slider-text__second-stroke">Японских лесок и шнуров</span>
+                        Для всех видов ловли
+                    </p>
+                  </div>
+                  <p class="slider__price">От 70 ₽</p>
+                  <div class="slider__photo">
+                    <img src="img/fishing-line.png" alt="Леска" width="229" height="186">
+                  </div>
+                </a>
               </div>
-            </a>
+              <div class="slider__item slider__item--project swiper-slide">
+                <a href="javascript:void(0)" class="slider__link">
+                  <div class="slider__text slider-text">
+                    <span class="slider-text__first-stroke">Проект</span>
+                    <p class="slider-text__wrapper">
+                      <span class="slider-text__second-stroke">Народная лодка</span>
+                        В рамках федеральной программы поддержки отечественных рыболовов–любителей
+                    </p>
+                  </div>
+                  <p class="slider__price">От 5 400 ₽</p>
+                  <div class="slider__photo">
+                    <img src="img/boat.png" alt="Народная лодка" width="328" height="200">
+                  </div>
+                </a>
+              </div>
+            </div>
           </div>
           <div class="slider__controls">
-            <button type="button" class="button button--slider button--prev" title="Предыдущий слайд">
-              <img src="img/icons/icon-slider-control-black.svg" alt="" aria-hidden="true" width="13" height="22">
+            <button type="button" class="button button--slider swiper-button-prev" title="Предыдущий слайд">
               <span class="visually-hidden">Предыдущий слайд</span>
             </button>
-            <button type="button" class="button button--slider button--next" title="Следующий слайд">
-              <img src="img/icons/icon-slider-control-black.svg" alt="" aria-hidden="true" width="13" height="22">
+            <button type="button" class="button button--slider swiper-button-next" title="Следующий слайд">
               <span class="visually-hidden">Следующий слайд</span>
             </button>
           </div>
@@ -846,6 +894,8 @@
       </div>
     </div>
   </footer>
+  <script src="plugins/swiper.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
